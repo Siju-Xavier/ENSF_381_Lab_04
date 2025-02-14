@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2</title>
+    </head>
+    <body>
+        <script>
+            /*
+            function add(number1, number2) {
+                return (number1 + number2);
+            }
+
+                function subtract(number1, number2) {
+                    return (number1 - number2);
+                }
+            
+            console.log(add(6, 4))
+            console.log(subtract(6, 4))
+            */
+            /*
+            function add(number1, number2 = 7) {
+                return (number1 + number2);
+            }
+
+                function subtract(number1, number2 = 7) {
+                    return (number1 - number2);
+                }
+
+            console.log('add 10 + 4 = ' + add(10, 4))
+            console.log('add 10 + default value (7) = ' + add(10))
+            console.log('subtract 10 - 4 = ' + subtract(10, 4))
+            console.log('subtract 10 - default value (7) = ' + subtract(10))
+            */
+            
+            let add = (number1, number2) => {
+                return (number1 + number2);
+            }
+
+            let subtract = (number1, number2) => {
+                return (number1 - number2);
+            }
+
+            let multiply = (number1, number2) => {
+                return (number1 * number2);
+            }
+
+            let divide = (number1, number2) => {
+                if (number2 == 0) {
+                    return('Invalid Operation');
+                }
+                return (number1 / number2);
+            }
+
+            console.log('add 10 + 4 = ' + add(10, 4))
+            console.log('subtract 10 - 4 = ' + subtract(10, 4))
+            console.log('multiply 10 * 4 = ' + multiply(10, 4))
+            console.log('divide 10 / 4 = ' + divide(10, 4))
+            console.log('divide 10 / 0 = ' + divide(10, 0))
+            
+
+            function calculator(number1, number2, callback) {
+                return(callback(number1, number2))
+            }
+
+            console.log(calculator(15, 5, add))
+            console.log(calculator(7, 8, multiply))
+
+        </script>
+    </body>
